@@ -1,1 +1,124 @@
 // Specific CSS for your home-page
+
+.banner {
+  height: 100vh;
+  // to be changed
+  background-color: black;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  // mettre un justify-content car en flex-direction column
+  justify-content: center;
+}
+
+.container-black {
+  background-color: black;
+}
+
+.container-infos {
+  // height: 45vh;
+  // mettre une min height eventuellement
+  margin-bottom: 5vh;
+  padding-top: 5vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.container-projects {
+  // height: 45vh;
+  // mettre une min height eventuellement
+  margin-bottom: 5vh;
+  padding-top: 5vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+@media (max-width: 576px) {
+  .container-projects {
+    grid-template-columns: 1fr;
+  }
+
+  .container-infos {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+// ----------- CARD PROJECT ----------------
+.card-project {
+  overflow: hidden;
+  height: 120px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+}
+
+.card-project img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+}
+
+.card-project h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-project p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-project .card-project-infos {
+  padding: 16px;
+}
+
+
+// ----------- CARD TRIP ----------------
+
+.card-info {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.card-info > img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-info h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-info p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+}
+
+
+.card-info .card-info-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.card-info-infos .card-info-user {
+  position: absolute;
+  right: 16px;
+  top: -20px;
+  width: 40px;
+}
