@@ -29,6 +29,8 @@
   </div>
 </div>
 
+
+
 <div class="banner">
   <div class="container">
     <div class="banner-infos">
@@ -39,7 +41,8 @@
   </div>
 </div>
 
-<div class="container">
+
+<div data-controller="scroll-reveal" data-scroll-reveal-target="item" class="container reveal">
 
   <div>
     <h2>Mes infoss</h2>
@@ -74,7 +77,7 @@
 </div>
 
 
-<div class="container-black">
+<div data-controller="scroll-reveal" data-scroll-reveal-target="item" class="container-black reveal">
   <div class="container">
 
     <div style="color:whitesmoke;">
@@ -110,6 +113,16 @@
     </div>
   </div>
 </div>
+
+
+<%# TEST JS SCROLL TO %>
+
+<div data-controller="scroll-reveal">
+  <p data-scroll-reveal-target="item" class="reveal">Hello</p>
+  <p data-scroll-reveal-target="item" class="reveal" data-delay="250ms">World!</p>
+</div>
+
+
 
 
 
