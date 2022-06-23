@@ -4,6 +4,7 @@ import Typed from "typed.js"
 
 export default class extends Controller {
   connect() {
+    console.log('coucou')
     new Typed(this.element, {
       strings: ["Premiere phrase", "Deuxieme..."],
       typeSpeed: 120,
