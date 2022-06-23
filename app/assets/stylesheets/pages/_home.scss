@@ -57,6 +57,35 @@
   }
 }
 
+.container-map {
+  display: flex;
+}
+
+.map-experiences {
+  width: 50%;
+
+}
+
+.map {
+  width: 50%;
+  height: 600px;
+}
+
+@media (max-width: 576px) {
+  .container-map {
+    display: block;
+  }
+
+  .map-experiences {
+    width: 100%;
+  }
+  .map {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+}
 
 // ----------- CARD PROJECT ----------------
 .card-project {

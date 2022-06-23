@@ -53,6 +53,8 @@
       <%# ----------- typed js ------------- %>
       <div class="d-flex align-items-center"> <h2 data-controller="typed-js"></h2></div>
       <button>click</button>
+      <a href="#" class="btn btn-success">Click me!</a>
+
     </div>
   </div>
 </div>
@@ -73,7 +75,7 @@
 <div data-controller="scroll-reveal" data-scroll-reveal-target="item" class=" container-infos container reveal">
 
   <div>
-    <h2>Mes infoss</h2>
+    <h2>Mes infos</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sapiente temporibus atque. Laborum dignissimos quaerat totam. Reprehenderit, eveniet. Voluptatibus ducimus culpa aperiam rerum qui omnis assumenda doloremque accusamus nulla laborum!</p>
   </div>
 
@@ -155,13 +157,29 @@
 </div>
 
 <%# --------- map experiences --------- %>
-<div data-controller="scroll-reveal" data-scroll-reveal-target="item" class="container reveal">
-  <div style="width: 100%; height: 600px;"
-    data-controller="mapbox"
-    data-mapbox-markers-value="<%= @markers.to_json %>"
-    data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
+
+<div data-controller="scroll-reveal" data-scroll-reveal-target="item"  class="reveal">
+  <div class="container container-map">
+
+  <div class="map-experiences my-5 me-4">
+    <h2>Explications</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur animi enim facere. Eum sint et in ipsam, eius accusantium delectus voluptas impedit fugit obcaecati tempore cupiditate labore ipsa nobis earum!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur animi enim facere. Eum sint et in ipsam, eius accusantium delectus voluptas impedit fugit obcaecati tempore cupiditate labore ipsa nobis earum!</p>
+
+    <a href="#" class="btn btn-success">Click Me!</a>
+  </div>
+
+
+    <div class=" map ms-4"
+      data-controller="mapbox"
+      data-mapbox-markers-value="<%= @markers.to_json %>"
+      data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
+    </div>
   </div>
 </div>
+
+
 
 <%# ================================= FOOTER ================================ %>
 <div data-controller="scroll-reveal" data-scroll-reveal-target="item" class="footer reveal">
