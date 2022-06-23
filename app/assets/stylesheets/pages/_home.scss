@@ -15,7 +15,15 @@
   background-color: black;
 }
 
+
 .container-infos {
+  min-height: 100vh;
+  margin-bottom: 5vh;
+  padding-top: 5vh;
+
+}
+
+.container-infos-grid {
   // height: 45vh;
   // mettre une min height eventuellement
   margin-bottom: 5vh;
@@ -26,6 +34,14 @@
 }
 
 .container-projects {
+  min-height: 100vh;
+  margin-bottom: 5vh;
+  padding-top: 5vh;
+  background-color: black;
+
+}
+
+.container-projects-grid {
   // height: 45vh;
   // mettre une min height eventuellement
   margin-bottom: 5vh;
@@ -36,11 +52,11 @@
 }
 
 @media (max-width: 576px) {
-  .container-projects {
+  .container-projects-grid {
     grid-template-columns: 1fr;
   }
 
-  .container-infos {
+  .container-infos-grid {
     grid-template-columns: 1fr;
   }
 }
