@@ -1,8 +1,8 @@
 // Specific CSS for your home-page
 
+// --------------- BANNER ---------------
 .banner {
   height: 100vh;
-  // to be changed
   background-color: black;
   color: whitesmoke;
   display: flex;
@@ -11,10 +11,10 @@
   justify-content: center;
 }
 
+// ------------- CONTAINERS -------------
 .container-black {
   background-color: black;
 }
-
 
 .container-infos {
   min-height: 100vh;
@@ -24,8 +24,6 @@
 }
 
 .container-infos-grid {
-  // height: 45vh;
-  // mettre une min height eventuellement
   margin-bottom: 5vh;
   padding-top: 5vh;
   display: grid;
@@ -42,8 +40,6 @@
 }
 
 .container-projects-grid {
-  // height: 45vh;
-  // mettre une min height eventuellement
   margin-bottom: 5vh;
   padding-top: 5vh;
   display: grid;
@@ -97,8 +93,7 @@
 }
 
 
-// ----------- CARD TRIP ----------------
-
+// ----------- CARD INFO ----------------
 .card-info {
   overflow: hidden;
   background: white;
@@ -122,7 +117,6 @@
   opacity: .7;
   margin: 0;
 }
-
 
 .card-info .card-info-infos {
   padding: 16px;
